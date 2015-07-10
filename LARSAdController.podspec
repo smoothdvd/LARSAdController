@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
       g.dependency 'Google-Mobile-Ads-SDK'
       g.dependency 'LARSAdController/Core'
       g.weak_frameworks = 'AdSupport', 'GoogleMobileAds'
-      g.frameworks = 'AudioToolbox', 'MessageUI', 'SystemConfiguration', 'CoreGraphics', 'StoreKit'
+      g.frameworks = 'AudioToolbox', 'MessageUI', 'SystemConfiguration', 'CoreGraphics', 'StoreKit', 'GoogleMobileAds'
     end
   
   s.subspec 'iAds' do |iAds|
