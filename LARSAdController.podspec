@@ -24,8 +24,10 @@ Pod::Spec.new do |s|
       g.source_files = 'Source/TOLAdAdapterGoogleAds.{h,m}'
       g.dependency 'Google-Mobile-Ads-SDK'
       g.dependency 'LARSAdController/Core'
-      g.weak_frameworks = 'AdSupport', 'GoogleMobileAds'
-      g.frameworks = 'AudioToolbox', 'MessageUI', 'SystemConfiguration', 'CoreGraphics', 'StoreKit', 'GoogleMobileAds'
+      g.weak_frameworks = 'AdSupport'
+      g.frameworks = 'AudioToolbox', 'MessageUI', 'SystemConfiguration', 'CoreGraphics', 'StoreKit'
+      g.xcconfig = { 'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK"' }
+
     end
   
   s.subspec 'iAds' do |iAds|
