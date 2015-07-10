@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
       g.dependency 'LARSAdController/Core'
       g.weak_frameworks = 'AdSupport'
       g.frameworks = 'AudioToolbox', 'MessageUI', 'SystemConfiguration', 'CoreGraphics', 'StoreKit'
-      g.xcconfig = { 'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK"' }
+      g.xcconfig = { 'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.3.1/GoogleMobileAds.framework/Versions/A/Headers"' }
 
     end
   
